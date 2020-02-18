@@ -7,10 +7,6 @@ Enzyme.configure({
   adapter: new Adapter(),
 });
 
-Enzyme.configure({
-  adapter: new Adapter(),
-});
-
 const Settings = {
   ERRORS_COUNT: 3
 };
