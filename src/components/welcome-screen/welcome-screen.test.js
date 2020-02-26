@@ -2,15 +2,11 @@ import React from "react";
 import renderer from "react-test-renderer";
 import WelcomeScreen from "./welcome-screen.jsx";
 
-const Settings = {
-  ERRORS_COUNT: 3
-};
-
-it(`<WelcomeScreen /> should render 3`, () => {
+it(`Should WelcomeScreen render correctly`, () => {
   const tree = renderer
     .create(<WelcomeScreen
-      errorsCount = {Settings.ERRORS_COUNT}
-      onWelcomeButtonClick = {() => {}}
+      errorsCount={3}
+      onWelcomeButtonClick={() => {}}
     />)
     .toJSON();
 
